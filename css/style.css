@@ -1,9 +1,13 @@
 .carousel-inner img{
- height: 500px;
+    height: 500px;
 }
 .card-body i {
-    font-size: 40px;
+ font-size: 40px;
 }
 .cyberseguridad img{
 height: 750px;
+}
+footer i {
+    font-size: 17px;
+    
 }
