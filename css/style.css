@@ -14,5 +14,12 @@ footer i {
 .informacionGeneralSeguridad img {
     height: 320px;
     width: 550px;
+}
 
+.imgContacto{
+  
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+   
 }
