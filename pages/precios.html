@@ -1,48 +1,278 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aprendiendo a usar GitHub desde 0">
-    <meta name="keywords" content="git hub, comandos, terminal">
-   <meta nama="author" content="Maia Gutierrez">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   <link rel="stylesheet" href="../css/style.css">
-    <title>RollingBank | Precios</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container ">
-              <div class="LogoBanck"><a class="navbar-brand" href="#">RollingBank</a></div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuRollingBank" aria-controls="menuRollingBank" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="menuRollingBank">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/quienesSomos.html">Quienes somos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="precios.html">Precios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/seguridad.html">Seguridad</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/error404.html">Robo o extravio</a>
-                  </li>               
-                </ul>
-              </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Aprendiendo a usar GitHub desde 0" />
+        <meta name="keywords" content="git hub, comandos, terminal" />
+        <meta nama="author" content="Pablo López Sardi" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/precios.css" />
+        <title>RollingBank</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <div class="LogoBanck">
+                        <a class="navbar-brand" href="#">RollingBank</a>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuRollingBank"
+                        aria-controls="menuRollingBank"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuRollingBank">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="../pages/quienesSomos.html"
+                                    >Quienes somos</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="precios.html"
+                                    >Precios</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="../pages/seguridad.html"
+                                    >Seguridad</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="../pages/error404.html"
+                                    >Robo o extravio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="../pages/contacto.html"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="contenedorTituloPrecios">
+                <div class="conteneir-fluid text-bg-primary py-5 text-center">
+                    <h1>Conocé nuestros precios</h1>
+                </div>
+            </section>
+
+            <section id="cardsBeneficios" class="mx-4">
+                <div class="container my-3">
+                    <div class="row justify-content-evenly">
+                        <div class="card col-lg-12 col-md-12 shadow my-3">
+                            <div class="card-body text-center">
+                                <i
+                                    class="bi bi-currency-dollar text-success"
+                                ></i>
+                                <h5 class="card-title fs-2 text-success">
+                                    Caja de ahorro gratis
+                                </h5>
+                                <ul class="card-text list-unstyled">
+                                    <li>Cuenta 100% bonificada</li>
+                                    <li>Sin costos de mantenimeinto</li>
+                                    <li>Trajeta de débito sin costo</li>
+                                </ul>
+                                <a
+                                    class="btn btn-outline-success"
+                                    href="./error404.html"
+                                    >¡La quiero!</a
+                                >
+                            </div>
+                        </div>
+
+                        <div
+                            class="card col-lg-3 col-md-5 shadow my-3 bg-warning"
+                        >
+                            <div class="card-body text-center">
+                                <i
+                                    class="bi bi-credit-card-2-front-fill text-dark"
+                                ></i>
+                                <h5 class="card-title text-dark">
+                                    Rolling Gold
+                                </h5>
+                                <p class="card-text text-dark">
+                                    Obtené tu cuenta Gold y obntené todos los
+                                    beneficios
+                                </p>
+                                <a
+                                    class="btn btn-outline-dark"
+                                    href="./error404.html"
+                                    >Consultar</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-lg-3 col-md-5 shadow my-3 bg-secondary-subtle"
+                        >
+                            <div class="card-body text-center">
+                                <i
+                                    class="bi bi-credit-card-2-front-fill text-secondary"
+                                ></i>
+                                <h5 class="card-title text-dark">
+                                    Rolling Platino
+                                </h5>
+                                <p class="card-text text-dark">
+                                    Obtené tu cuenta Platino y obntené todos los
+                                    beneficios
+                                </p>
+                                <a
+                                    class="btn btn-outline-dark"
+                                    href="./error404.html"
+                                    >Consultar</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="card col-lg-3 col-md-5 shadow my-3 bg-black"
+                        >
+                            <div class="card-body text-center">
+                                <i
+                                    class="bi bi-credit-card-2-front-fill text-white"
+                                ></i>
+                                <h5 class="card-title text-white">
+                                    Rolling Black
+                                </h5>
+                                <p class="card-text text-white">
+                                    Obtené tu cuenta Black y obntené todos los
+                                    beneficios
+                                </p>
+                                <a
+                                    class="btn btn-outline-light"
+                                    href="./error404.html"
+                                    >Consultar</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark text-secondary pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column flex-lg-row">
+                        <h2 class="text-lg-start text-center">RollingBank</h2>
+                        <div class="social-icons mt-lg-2 text-center">
+                            <i class="bi bi-facebook mx-lg-4"></i>
+                            <i class="bi bi-instagram me-lg-4 mt-lg-2"></i>
+                            <i class="bi bi-twitter-x mt-lg-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h4 class="text-center text-sm-start">
+                                Navegación
+                            </h4>
+                            <ul
+                                class="list-unstyled text-decoration-underline text-center text-sm-start"
+                            >
+                                <li class="list-group-item">¿Quienes somos?</li>
+                                <li class="list-group-item">Precios</li>
+                                <li class="list-group-item">Seguridad</li>
+                                <li class="list-group-item">Ayuda</li>
+                                <li class="list-group-item">Robo o extravio</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h4 class="text-center text-sm-start">Legales</h4>
+                            <ul
+                                class="list-unstyled text-decoration-underline text-center text-sm-start"
+                            >
+                                <li class="list-group-item">
+                                    Regimen de transferencia
+                                </li>
+                                <li class="list-group-item">
+                                    Usuario bancario
+                                </li>
+                                <li class="list-group-item">
+                                    Conducta bancaria
+                                </li>
+                                <li class="list-group-item">
+                                    Estados bancables
+                                </li>
+                                <li class="list-group-item">
+                                    Terminos y condiciones
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-12 col-md-3 img-fluid text-start me-md-5"
+                        >
+                            <img
+                                src="../img/usuariosfinancieros.png"
+                                style="width: 250px"
+                                alt="Imagen usuarios financieros"
+                                class="mx-auto my-3 my-md-0 d-block"
+                            />
+                        </div>
+                        <div class="col-12 col-md-1">
+                            <h4 class="text-center text-sm-start ms-md-3">
+                                Unite
+                            </h4>
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center img-fluid ms-md-3"
+                            >
+                                <img
+                                    src="../img/badge-apple-store.svg"
+                                    style="width: 200px"
+                                    alt="Apple store"
+                                />
+                                <img
+                                    src="../img/google-play-badge-bb.svg"
+                                    style="width: 200px"
+                                    alt="Play Store"
+                                    class="mt-2"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </nav>
-    </header>
-</body>
+        </footer>
+    </body>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+    ></script>
 </html>
